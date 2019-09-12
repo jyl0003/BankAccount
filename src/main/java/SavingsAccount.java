@@ -1,9 +1,9 @@
 public class SavingsAccount extends Account {
     protected int timesWithdrawn = 0;
-    protected int monthlyDepositTotal = 0;
-    private static final int MAX_WITHDRAWAL_TIMES = 10;
-    private static final int MONTHLY_MIN_DEPOSIT = 25;
-    private static final int MONTHLY_FEE = 40;
+    protected double monthlyDepositTotal = 0;
+    private static final double MAX_WITHDRAWAL_TIMES = 10;
+    private static final double MONTHLY_MIN_DEPOSIT = 25;
+    private static final double MONTHLY_FEE = 40;
     //Basic Constructor
     public SavingsAccount(String owner, double totalBalance) {
         super(owner, totalBalance);
@@ -48,7 +48,7 @@ public class SavingsAccount extends Account {
         }
         else {
             amountOwed += MONTHLY_FEE;
-            System.out.println("Amount owed is: " + amountOwed);
+            System.out.println("Total fee is: " + amountOwed);
         }
     }
     //New month: monthly amount of withdrawals allowed goes back to 0 and monthly deposit total goes back to 0

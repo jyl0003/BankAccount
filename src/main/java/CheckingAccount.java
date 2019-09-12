@@ -14,10 +14,8 @@ public class CheckingAccount extends Account {
         else {
             if (withdrawAmount > mTotalBalance) {
                 amountOwed += OVERDRAFT_FEE;
-                mTotalBalance -= withdrawAmount;
-            } else {
-                mTotalBalance -= withdrawAmount;
             }
+            mTotalBalance -= withdrawAmount;
         }
     }
 

@@ -1,8 +1,7 @@
 public class Account {
     protected double mTotalBalance = 0;
     protected String mOwner;
-    protected double amountOwed;
-    protected double mTotalFee = 0;
+    protected double amountOwed = 0; //The fee
 
     public Account(String mOwner, double mTotalBalance) {
         this.mTotalBalance = mTotalBalance;

@@ -1,7 +1,7 @@
 public class SavingsAccount extends Account {
     protected int timesWithdrawn = 0;
     protected double monthlyDepositTotal = 0;
-    private static final double MAX_WITHDRAWAL_TIMES = 10;
+    private static final int MAX_WITHDRAWAL_TIMES = 10;
     private static final double MONTHLY_MIN_DEPOSIT = 25;
     private static final double MONTHLY_FEE = 40;
     //Basic Constructor
